@@ -1,33 +1,4 @@
 Rails.application.routes.draw do
-
-  root 'users#index'
-
-  # resources :users do
-  #   member do
-  #     get :delete
-  #   end
-
-  #   member do
-  #     get :login
-  #   end
-  # end
-
-  # resources :references do
-  #   member do
-  #     get :delete
-  #   end
-  # end
-
-  # resources :projects do
-  #   member do
-  #     get :delete
-  #   end
-  # end
-
-  match ':controller(/:action(/:id))', :via => [:get, :post]
-  
-  
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
