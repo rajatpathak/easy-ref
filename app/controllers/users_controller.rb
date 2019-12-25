@@ -84,7 +84,7 @@ class UsersController < ApplicationController
 
   def create
     my_hash = JSON.parse('{"data": null, "errorCode": 0, "errorMessages":"success"}')
-    user = User.new
+    user = users.new
     user.name = params[:name]
     user.password_digest = params[:password]
     user.email = params[:email].delete '\"'
